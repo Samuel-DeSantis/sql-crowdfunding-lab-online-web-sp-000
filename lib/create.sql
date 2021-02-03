@@ -17,7 +17,7 @@ CREATE TABLE pledges (
   id INTEGER PRIMARY KEY,
   amount INTEGER,
   user INTEGER,
-  FOREIGN KEY(user) REFERENCES users(id),
   project INTEGER,
+  FOREIGN KEY(user) REFERENCES users(id),
   FOREIGN KEY(project) REFERENCES projects(id)
 );
